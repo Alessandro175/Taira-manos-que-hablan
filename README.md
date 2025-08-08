@@ -1,2 +1,0 @@
-# Taira manos que hablan
-

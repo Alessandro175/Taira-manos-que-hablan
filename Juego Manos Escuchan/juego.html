@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Juego — Nivel 1 Abecedario</title>
+  <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+  <div id="juego-container">
+    <header>
+      <h1>Nivel 1 — Abecedario en Lengua de Señas</h1>
+      <p>Jugador: <span id="nombreJugador"></span></p>
+    </header>
+
+    <div id="pregunta-box">
+      <p id="pregunta-texto"></p>
+      <img id="pregunta-imagen" src="" alt="Seña" />
+      <div id="opciones"></div>
+    </div>
+
+    <div id="resultado"></div>
+  </div>
+
+  <!-- Librería de confeti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script src="preguntas.js"></script>
+  <script src="juego.js"></script>
+</body>
+</html>
