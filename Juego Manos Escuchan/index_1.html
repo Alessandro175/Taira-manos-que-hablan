@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego de Señas - Manos Escuchan</title>
+  <link rel="stylesheet" href="style.css" /> <!-- Asegúrate de que el nombre del archivo CSS sea correcto -->
+</head>
+<body>
+  <div class="container">
+    <h1><span class="emoji">🧏‍♂️</span> Juego de Señas</h1>
+
+    <!-- Selección de categoría -->
+    <div class="category-select card">
+      <label for="category">Selecciona una categoría:</label>
+      <select id="category">
+        <option value="abecedario">🔤 Abecedario</option>
+        <option value="numeros">🔢 Números</option>
+        <option value="palabras">💬 Palabras comunes</option>
+        <option value="oraciones">📝 Oraciones</option>
+        <option value="frases">💡 Frases útiles</option>
+        <!-- Puedes añadir más categorías aquí si tienes imágenes y lógica para ellas -->
+      </select>
+      <button id="start-btn" class="btn btn-primary">Comenzar</button>
+    </div>
+
+    <!-- Juego -->
+    <div id="quiz" class="quiz hidden card">
+      <div id="image-container">
+        <img id="sign-image" src="" alt="Seña actual" />
+      </div>
+
+      <div id="options-container">
+        <!-- Las opciones se cargarán aquí dinámicamente -->
+      </div>
+
+      <div id="feedback" class="feedback hidden">
+        <!-- El feedback de la respuesta se mostrará aquí -->
+      </div>
+
+      <div class="score-section">
+        Puntaje: <span id="score">0</span>
+      </div>
+
+      <div class="buttons">
+        <button id="next-btn" class="btn btn-secondary">Siguiente</button>
+        <button id="restart-btn" class="btn btn-danger hidden">Reiniciar</button>
+      </div>
+    </div>
+
+    <!-- Contenedor para resultados finales (Nuevo) -->
+    <div id="final-results" class="card hidden">
+      <!-- Los resultados finales se mostrarán aquí -->
+    </div>
+
+  </div>
+
+  <!-- Archivos JS -->
+  <script src="preguntas.js"></script>
+  <script src="funciones.js"></script>
+</body>
+</html>
